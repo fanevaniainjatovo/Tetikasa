@@ -93,7 +93,7 @@ double inteTrap(double a, double b){
 	double inc=(a+b)/10;
 	
 	
-	for(i=a;i<b-2*inc;i+=inc){
+	for(i=a;i<b-inc;i+=inc){
 
 		
 		ing+=(f(i)*(inc))+((f(i+inc)-f(i)))*(inc)/2;

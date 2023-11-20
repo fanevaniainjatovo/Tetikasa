@@ -26,14 +26,14 @@ int main(int argc, char **argv)
     
     printf("<body>");
     
-    printf("<h1>Fonction log(x)-1</h1>");
+    printf("<h1>Fonction log(x)-1 </h1>");
         
     css("/home/faneva/html2/css/math.css");
     
     printf("<center>");
     printf("<form action=\"./mathfonc.cgi\" method=\"get\">");
-    printf("<input placeholder=\"borne1\" type=\"text\"  pattern=\"[0-9]+\" name=\"borne1\">");
-    printf("<input placeholder=\"borne2\" type=\"text\"  pattern=\"[0-9]+\" name=\"borne2\">");
+    printf("<input placeholder=\"borne1\" type=\"number\" step=\"0.01\" name=\"borne1\">");
+    printf("<input placeholder=\"borne2\" type=\"number\" step=\"0.01\" name=\"borne2\">");
     printf("</br><button type=\"submit\" name=\"method\" value=\"d\">Methode de dichotomie</button>");
     printf("<button type=\"submit\" name=\"method\" value=\"c\">Methode de Descartes</button>");
     printf("<button type=\"submit\" name=\"method\" value=\"n\">Methode de Newton</button>");

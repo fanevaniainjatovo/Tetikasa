@@ -8,4 +8,4 @@ int countline();
 void boutonA(int bouton,int l);
 void auth();
 void deconnex(char* co);
-
+char* jourS(char* andro);

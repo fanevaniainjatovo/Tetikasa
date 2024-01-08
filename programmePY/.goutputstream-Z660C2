@@ -1,0 +1,72 @@
+
+import random
+import py5
+
+x=500 
+y=300
+rectx=[470,670,870,1070,1270]
+taille=[random.randint(10,500),random.randint(10,500),random.randint(10,500),random.randint(10,500),random.randint(10,500)]
+img = 0
+tuyau1= 0
+tuyau = 0
+background = 0
+
+def setup():
+	
+	global img,tuyau,tuyau1,background,x,y
+	py5.size(x*2,y*2)
+	img=py5.load_image("flappy.png")
+	tuyau=py5.load_image("tuyau.jpeg")
+	tuyau1=py5.load_image("tuyau_inv.jpeg")
+	background=py5.load_image("back7.jpeg")
+	
+def key_pressed():
+	global x,y
+	
+	if py5.key== ' ':
+		y=y-50
+		
+def draw():
+	
+	global x,y,rectx,taille,img,tuyau,tuyau1,background
+		
+	py5.background(250)
+	#py5.image(background,0,0,1000,480)
+	
+	
+	py5.fill(10,255,0)
+	py5.image(img,x,y,100,100)
+	
+	#py5.fill(0,0,0)
+	#py5.text_size(50)
+	#py5.text("GAME OVER",240,240)
+	
+	
+	for i in range(5):
+	
+		py5.fill(255,0,0)
+		py5.image(tuyau1,rectx[i],0,50,taille[i])
+	
+		py5.fill(255,0,0)
+		py5.image(tuyau,rectx[i],taille[i]+200,50,400-taille[i])
+		#py5.rect(rectx[i],taille[i]+130,30,350-taille[i])	
+		rectx[i]-=1
+		
+		
+		if(rectx[i]==-40):
+			rectx[i]=570
+			taille[i]=random.randint(10,500)
+		
+		
+	y+=2	
+	
+	
+	
+	if y<0:
+		y=0
+    
+	elif y>480:
+		y=480	
+    
+py5.run_sketch()		
+

@@ -1,0 +1,34 @@
+body{
+    background-color: #0D0F3D;
+    color:bisque;
+}
+
+table{
+ background-color: #22233D;
+}
+
+td{
+    padding: 20px;
+
+}
+
+h1{
+    text-align: center;
+}
+
+#change{
+    position: absolute;top: 10px;left: 1100px;
+
+}
+
+button:hover{
+    color: white;
+    background-color: #22233D;
+}
+
+#title{
+    padding: 10px;
+    position:absolute;left: 10px;top: 10px;
+    background-color: #00011F;
+    color:aqua;
+}

@@ -1,0 +1,44 @@
+<html>
+	<body>
+	<?php
+		$nl=$_POST["bouton"];	
+		echo "<form action=\"./modifier.php\" method=\"get\">
+                        <input name=\"x\" type=\"number\">
+                        </br>
+                        <input name=\"y\" type=\"number\">
+                        <button type=\"submit\" name=\"line\" value=\"$nl\">modifier</button>
+        	</form>
+		";
+	 	
+/*		$fichier1=fopen("table.txt","r");       
+        
+        echo "<table border=\"1\">
+        <tr style=\"background-color:#5CC05C;color: #00044A;font-size: 15pt;\">
+                <td>A</td>
+                <td>B</td>
+                <td>A*B</td>
+                <td>MODIFICATION</td>
+                <td>SUPPRESSION</td>
+        </tr>   
+        ";
+        for($i=1;$line=fgets($fichier1);$i++){
+                $color=($i%2==0)?"#827EB8":"#4BA84D";
+                echo "<tr style=\"background-color:$color\"> 
+                                <td>x=<input name=\"x\" type=\"number\"></td> 
+                                <td>y=<input name=\"y\" type=\"number\"></td> 
+                                <td>x*y</td>
+                                <td> 
+                                   <form method=\"post\" action=\"formModif.php\">      
+                                        <button type=\"submit\" name=\"bouton\" value=$i>modifier</button> 
+                                   </form>
+                                </td>
+                                <td>
+                                   tsisy
+                                </td>
+                      </tr>";   
+        }
+	echo "</table>";
+	fclose($fichier1);
+?>*/
+	</body>
+</html>

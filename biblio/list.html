@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bibliotheque | Ajout</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>MA BIBLIOTHEQUE</h1>
+        </div>
+        <nav>
+            <a href="./list.html">Liste des Livres</a>
+            <a href="./ajout.html">Ajout de Livres</a>
+        </nav>
+    </header>
+    
+    <main>
+        <span id="search">
+                <label for="cat">Categorie du livre</label>
+                <select name="cat" id="cat">
+                    <optgroup label="Langue">
+                        <option value="fiction">Fiction</option>
+                        <option value="manga">Manga</option>
+                        <option value="action">Action</option>
+                        <option value="romance">Romance</option>
+                        <option value="superhero">Super-heros</option>
+                        <option value="autre">autre</option>
+                        <option value="all">Tous les categories</option>
+                    </optgroup>
+                </select>
+        </span>
+
+        <div id="container">
+            <div id="livre">
+
+            </div>
+        </div>
+    </main>
+    <script src="js/lister.js"></script>
+</body>
+</html>

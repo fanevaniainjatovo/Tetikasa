@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bibliotheque | Ajout</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>MA BIBLIOTHEQUE</h1>
+        </div>
+        <nav>
+            <a href="./list.html">Liste des Livres</a>
+            <a href="./ajout.html">Ajout de Livres</a>
+        </nav>
+    </header>
+    
+    <form id="form">
+        <section>
+            <label for="title">Titre du livre</label>
+            <input type="text" name="titre" placeholder="Ajouter le titre">
+        </section>
+
+        <section>
+            <label for="auteur">Auteur du livre</label>
+            <input type="text" name="auteur" placeholder="Ajouter l'auteur">
+        </section>
+
+        <section>
+            <label for="isbn">ISBN</label>
+            <input type="text" name="isbn" placeholder="Ajouter l'isbn">
+        </section>
+
+        <section>
+            <label for="image">Image du livre</label>
+            <input type="file" name="image" placeholder="Ajouter l'image ">
+        </section>
+
+        <section>
+            <label for="editeur">Editeur du livre</label>
+            <input type="text" name="editeur" placeholder="Ajouter l'editeur">
+        </section>
+
+        <section>
+            <label for="date">Date de publication du livre</label>
+            <input type="date" name="date" placeholder="Ajouter la date">
+        </section>
+
+        <section>
+            <label for="genre">Categorie du livre</label>
+            <select name="genre" id="genre">
+                <optgroup label="Langue">
+                    <option value="fiction">Fiction</option>
+                    <option value="manga">Manga</option>
+                    <option value="action">Action</option>
+                    <option value="romance">Romance</option>
+                    <option value="superhero">Super-heros</option>
+                    <option value="autre">autre</option>
+                    <option value="all">Tous les categories</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section>
+            <label for="resume">Resume du livre</label>
+            <textarea name="resume"></textarea>
+        </section>
+
+        <section>
+            <label for="langue">Langue du livre</label>
+            <select name="langue" id="langue">
+                <optgroup label="Langue">
+                    <option value="Francais">Francais</option>
+                    <option value="Anglais">Anglais</option>
+                    <option value="Malagasy">Malagasy</option>
+                    <option value="Allemand">Allemand</option>
+                    <option value="Espagnol">Espagnol</option>
+                    <option value="autre">autre</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section>
+            <label for="page">Nombre de pages du livre</label>
+            <input type="number" name="page" min="2" placeholder="Ajouter le nombre de pages">
+        </section>
+
+        <section>
+            <label for="etat">Etat du livre</label>
+            <select name="etat" id="etat">
+                <optgroup label="Etat du livre">
+                    <option value="1">Bonne</option>
+                    <option value="0">Mauvaise</option>
+                    <option value="-1">Endommagee</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section>
+            <label for="emplacement">Emplacement du livre</label>
+            <select name="emplacement" id="emplacement">
+                <optgroup label="Emplacement du livre">
+                    <option value="reserve">Reserves</option>
+                    <option value="cave">Cave</option>
+                    <option value="Etagere">Etagere</option>
+                </optgroup>
+            </select>
+        </section>    
+        <button type="button" id="ajout">Ajouter le livre</button>
+    </form>
+    <script src="js/generateJson.js"></script>
+</body>
+</html>

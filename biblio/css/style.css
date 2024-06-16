@@ -1,0 +1,129 @@
+/*ajout*/
+form{
+    background-color: rgba(0,0,0,0.2);
+}
+
+section{
+    margin-bottom: 15px;
+}
+
+img{
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*header*/
+
+header{
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+header div{
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+}
+
+header nav a{
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+
+/*list*/
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main #container{
+    display: flex;
+    flex-direction: column;
+}
+
+main #container #details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main #container #livre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#container #search{
+    display: flex;
+}
+
+#livre span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.2);
+    margin: 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#livre span:hover{
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.01);
+}
+
+#livre img{
+    width: 70%;
+    height: 500px;
+}
+
+ /*form*/
+
+form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form section label ~ *{
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+}
+
+button{
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    /* height: 100px; */
+}
+
+button:hover{
+    background-color: rgba(0,0,0,0.2);
+}
